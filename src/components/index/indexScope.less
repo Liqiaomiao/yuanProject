@@ -1,0 +1,98 @@
+@import "../../common/var";
+#index {
+  .wraper{margin-top:18px;
+  margin-bottom: 42px;}
+  .search_category {
+    text-align: left;
+    background: #fff;
+    padding: 0 24px;
+    .search_list{
+      display: flex;
+      justify-content: space-between;
+      padding: 20px 0;
+      border-bottom: 1px solid #ededed;
+      .imgcontainer{width: 19px;height: 19px;}
+
+      &.list_all{
+        img{
+          width:18px;
+          height: 18px;
+        }
+        .tag{
+          display: flex;
+          span{padding: 8px 13px;background:#e6f0ff;border-radius: 20px;color:@highlight;font-size: 14px;}
+          i{
+            .col_73;
+            margin: 0 10px;
+          }
+        }
+
+      }
+      .search_hd{
+        .just-align-center;
+        label{
+          font-size:16px;
+          color:@col-4c;
+          margin-left:10px;
+          width: 83px;
+        }
+        .list{
+          display: flex;
+          font-size: 14px;
+          .col_73;
+          cursor: pointer;
+
+          p{
+            margin-right: 40px;
+            &:hover{
+              span{color: @highlight;}
+            }
+            .active{
+              color: @highlight;
+            }
+          }
+
+        }
+      }
+      .search_ft{
+        font-size: 14px;
+        .col_73;
+        cursor: pointer;
+        a{
+          color:@highlight
+        }
+      }
+      &.search_sort{
+        border-bottom: 0;
+        p{
+          .just-align-center;
+          .sort{
+            display: inline-flex;
+            width: 10px;
+            height: 14px;
+            background: url("../../assets/img/sortdefault.png") no-repeat left top;
+
+          }
+          span{
+            margin-right: 6px;
+          }
+          &.active{
+            color: @highlight;
+            .sort{
+              &.up{
+                background: url("../../assets/img/up.png") no-repeat left top;
+              }
+              &.down{
+                background: url("../../assets/img/down.png") no-repeat left top;
+              }
+            }
+          }
+        }
+
+
+      }
+    }
+
+  }
+
+}

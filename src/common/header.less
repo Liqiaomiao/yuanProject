@@ -1,0 +1,94 @@
+@import "var";
+.height-lh{
+  height: 38px;
+  line-height: 38px;
+}
+.common-font{
+  color: #808080;
+  font-size: 14px;
+}
+#header{
+  height: 70px;
+  padding-top: 12px;
+  background: #fff;
+  .wraper{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto!important;
+    .nav{
+      flex-grow: 1;
+      color:@col-4c;
+      text-align: left;
+      padding-left:150px;
+      display: flex;
+      align-items: center;
+      font-size: 16px;
+      li{
+        display: inline-block;
+        margin-right: 50px;
+        cursor: pointer;
+        font-size: 18px;
+        &.active{
+          color: @highlight;
+        }
+      }
+      .search_bar{
+        background: #eee;
+        border-radius: 20px;
+        .height-lh;
+        width: 325px;
+        padding-left: 34px;
+        padding-right: 16px;
+        margin-right: 14px;
+        display: flex;
+        align-items: center;
+        justify-content:space-between;
+        input{
+          background: #eee;
+          border: none;
+          height: 38px;
+          line-height: 38px;
+          flex-grow: 1;
+          &::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+            color:    #b3b3b3;
+          }
+          &:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+            color:    #b3b3b3;
+          }
+          &::-moz-placeholder { /* Mozilla Firefox 19+ */
+            color:    #b3b3b3;
+          }
+          &:-ms-input-placeholder { /* Internet Explorer 10-11 */
+            color:    #b3b3b3;
+          }
+        }
+        img{
+          width: 19px;height: 20px;
+          cursor: pointer;
+        }
+      }
+      button{
+        .height-lh;
+        width: 108px;
+        color: #fff;
+        margin-left: 15px;
+      }
+    }
+    .userinfo{
+      .common-font;
+      div{
+        display: flex;
+        align-items: center;
+        img{
+          width: 48px;
+          height: 48px;
+          margin-right: 15px;
+        }
+      }
+      span{
+        cursor: pointer;
+      }
+    }
+  }
+}

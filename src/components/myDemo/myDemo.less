@@ -1,0 +1,55 @@
+@import "../../common/common.less";
+#myDemo{
+  .searchcontainer {
+    .el-input__inner {
+      border-radius: 40px;
+      border: 1px solid #baddfe;
+      &::placeholder {
+        color: #70b9fd
+      }
+    }
+  }
+  .el-button {
+    color: #fff;
+    width: 86px;
+    height: 38px;
+    font-size: 16px;
+    display: flex;
+    border: 0;
+    justify-content: center;
+    &:hover {
+      opacity: 0.9;
+    }
+  }
+  .btn-warning {
+    background: linear-gradient(#fec14b, #fca702);
+
+    border: 0 !important;
+
+
+  }
+  .btn-primary{
+    background:#e6f0ff ;
+    color:#2595fe;
+  }
+
+  .btn-disabled{
+    background:#ededed;
+    color:#999 ;
+  }
+  .el-pagination{
+    margin-top: 30px;
+    font-weight: normal;
+    color:#808080;
+    .btn-prev{
+      border-top-left-radius: 20px;
+      border-bottom-left-radius: 20px;
+    }
+    .btn-next{
+      border-top-right-radius: 20px;
+      border-bottom-right-radius: 20px;
+    }
+
+  }
+
+}

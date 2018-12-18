@@ -1,0 +1,68 @@
+@import "../common";
+.comments_list{
+  .tag{
+    width: 48px;
+    height: 20px;
+    color: #fff;
+    text-align: center;
+    line-height: 20px;
+    border-radius: 20px;
+    font-size: 12px;
+  }
+  .tag.html{
+    background: #ff926b;
+  }
+  .tag.java{
+    background:#6aa5ff
+  }
+  .tag.c{
+    background: #fdb368;
+  }
+  .reply{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    .hd{
+      padding-left: 28px;
+      border-radius: 20px;
+      width: 100%;
+      background: #f5f5f5;
+      display: flex;
+      align-items: flex-start;
+      label{
+        flex-shrink: 0;
+        line-height: 32px;
+        span{
+          color: @highlight;
+        }
+      }
+      .el-input__inner,.el-textarea__inner{
+        background: transparent;
+        border: none;
+        font-family: 'Microsoft YaHei';
+      }
+    }
+    .ft{
+      display: flex;
+      margin-top: 11px;
+      .btn-cancel{
+        color:#999!important;
+        background: #fff!important;
+        &:hover{
+          background: none;
+        }
+      }
+      .btn-default{
+        width: 70px!important;
+        height: 34px!important;
+        .just-align-center;
+        justify-content: center;
+        padding: 0;
+        line-height: 1;
+      }
+    }
+
+  }
+
+
+}

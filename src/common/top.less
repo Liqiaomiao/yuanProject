@@ -1,0 +1,53 @@
+#top{
+  position: fixed;
+  right: 1px;
+  top:50%;
+  transform:translateY(-50%);
+  &>div{
+    transition: all .5s ease .1s;
+    width: 44px;
+    height:44px;
+    background: #e6e6e6;
+    color:#9b9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor:pointer;
+    position: relative;
+
+    &:hover{
+      background: #438eff;
+      color:#fff;
+      transition: all .5s ease .1s;
+    }
+    &.customer{
+      p{
+        position: absolute;
+        right:46px;
+        min-width:117px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #e6f0ff;
+        color: #438eff;
+        visibility: hidden;
+      }
+      &:hover{
+        p{
+          visibility: visible;
+          transition: all .5s ease .1s;
+        }
+      }
+    }
+    &.top{
+      margin-top: 1px;
+    }
+    .icon-kefu{
+      font-size: 28px;
+    }
+    .icon-top{
+      font-size: 30px;
+    }
+  }
+}

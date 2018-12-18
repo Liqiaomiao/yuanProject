@@ -1,0 +1,103 @@
+@import "../common";
+.comments_summar{
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #b8d5fd;
+  padding-bottom: 19px;
+  .ft{
+    display: flex;
+    .col_73;
+    font-size: 14px;
+    li{
+      margin-left: 40px;
+      cursor: pointer;
+      &:hover,&.current{
+        color:@highlight
+      }
+    }
+  }
+}
+.comments_list{
+
+  time{
+    color: #999;
+  }
+  font-size: 15px;
+  .list{
+    border-bottom: 1px solid @col_f5;
+    padding: 20px 5px;
+    .col_73;
+    .list-hd{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .cell-hd{
+        display: flex;
+        align-items: center;
+        .name{
+          color: #4e4e4e;
+          margin: 0 15px;
+
+        }
+        .level{
+          margin-left: 0;
+          text-align: center;
+          font-style: normal;
+        }
+        .tag{
+          margin-left:10px; ;
+        }
+      }
+    }
+    .list-bd{
+      padding:10px 0 15px 0;
+    }
+    .list-ft{
+      margin-bottom: 15px;
+      ul{display: flex;align-items: center;
+        li{
+          min-width: 82px;
+          cursor: pointer;
+          display: flex;
+          align-items: center;
+          .icon{
+            margin-right: 5px;
+          }
+          &.focus{
+
+            .icon{color: @highlight;}
+
+          }
+          &.iconreply.focus{
+            color: @highlight;
+          }
+        }
+      }
+    }
+    .recomments{
+      padding:5px 0 20px 0;
+      .recomment_cell{
+        border-left: 2px solid #e6e6e6;
+        padding: 10px 0 10px 10px;
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid @col_f5;
+        &:last-child{
+          border-bottom: 0;
+        }
+        .recomment_hd{
+          color:@col-4c;
+          span{
+            color: @highlight;
+          }
+        }
+        .recomment_ft{
+          flex-shrink: 0;
+        }
+      }
+    }
+
+  }
+
+
+}

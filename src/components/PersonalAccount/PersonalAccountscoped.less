@@ -1,0 +1,101 @@
+@import "../../common/var";
+
+#PersonalAccount {
+  text-align: center;
+  margin-top: 9px;
+  .account {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    .cell-hd {
+      width: 653px;
+      height: 262px;
+      display: flex;
+      justify-content: space-around;
+      flex-direction: column;
+      background: url("../../assets/img/accountbg.png") no-repeat left top;
+      background-size: cover;
+      color: #fff;
+      padding-top: 30px;
+      padding-bottom: 20px;
+      .fz18 {
+        font-size: 18/px;
+      }
+      .fz30 {
+        font-size: 30px;
+      }
+      .el-button {
+        width: 100px;
+        height: 38px;
+        color: #fff;
+        border: none;
+        font-size: 16px;
+      }
+      .btn-error {
+        background: linear-gradient(#fe7e7e, #ff5a5b);
+        margin-right: 95px;
+      }
+      .btn-warning {
+        background: linear-gradient(#fec14b, #fca702);
+      }
+    }
+    .cell-ft {
+      width: 420px;
+      background: #fff;
+      text-align: left;
+      padding: 20px 30px;
+      height: 262px;
+      .col_73;
+      font-size: 15px;
+      dt {
+        margin-bottom: 36px;
+      }
+      dd {
+        margin-bottom: 30px;
+        color: @col-4c;
+      }
+      .el-radio {
+        display: flex;
+        align-items: center;
+      }
+
+    }
+  }
+  .tablelist {
+    background: #fff;
+    padding: 30px 40px 0 30px;
+    .account_tb {
+      width: 995px;
+      margin: 0 auto;
+    }
+    .btns {
+      width: 160px;
+      height: 34px;
+      border: 1px solid #a0d1ff;
+      border-radius: 30px;
+      margin: 0 auto;
+      display: flex;
+      overflow: hidden;
+      margin-bottom: 20px;
+      box-shadow: 0 3px 6px rgba(4, 100, 189, 0.08);
+      button {
+        width: 50%;
+        height: 100%;
+        background: #fff;
+        font-size: 14px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        line-height: 1;
+        .col_73;
+        &.current {
+          background: linear-gradient(#4ca8fd, #2595fe);
+          color: #fff;
+        }
+      }
+    }
+    .tablepager {
+      padding: 20px 0;
+    }
+  }
+}

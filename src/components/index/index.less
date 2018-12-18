@@ -1,0 +1,132 @@
+@import "../../common/var";
+#index{
+  .el-button {
+    color: #fff;
+    width: 86px;
+    height: 38px;
+    font-size: 16px;
+    border: 0;
+    justify-content: center;
+    .just-align-center;
+    padding: 0;
+    border-radius: 20px;
+    &:hover {
+      opacity: 0.9;
+    }
+  }
+  .btn-download{
+    min-width: 86px;
+    width: auto;
+    padding: 0 10px;
+  }
+  .btn-warning {
+    background: linear-gradient(#fec14b, #fca702);
+
+    border: 0 !important;
+
+
+  }
+  .btn-primary{
+    background:#e6f0ff ;
+    color:#2595fe;
+  }
+
+  .btn-disabled{
+    background:#ededed;
+    color:#999 ;
+  }
+  .block{
+    .el-pagination{
+      margin-top: 30px;
+      font-weight: normal;
+      color:#808080;
+      .btn-prev{
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+      }
+      .btn-next{
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+      }
+
+    }
+  }
+  .comments_list{
+    .el-pagination{
+      text-align: center;
+      padding: 20px 0;
+    }
+  }
+  .democommon .panel{
+    .panel_hd{
+      width: 294px;margin-right: 29px;
+      .imgcontainer{width: 294px;height: 178px}
+    }
+    .panel_bd{
+      .row-2{height: 82px;}
+      .row-3 {
+        .row-hd{
+          .list {
+            span{
+              margin-left:10px;
+            }
+            &.active{
+              span,.icon{
+                color: @highlight;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  #comments{
+    position:relative;
+
+    &:after,&:before{
+      display: block;
+      content: "";
+      position: absolute;
+      border: 26px solid transparent ;
+      left:513px;
+      border-top: 0;
+    }
+    &:after{
+      border-bottom:16px solid #fff ;
+      z-index: 1;
+      top:-16px;
+    }
+    &:before{
+      border-bottom:16px solid #b9d5fe ;
+      z-index: 0;
+      top:-17px;
+    }
+    &.commentOrder:after,  &.commentOrder:before{
+      left:596px;
+    }
+    margin-top: 20px;
+    border: 1px solid #b9d5fe;
+    .comments_summar{
+      padding:0 30px!important;
+      height:56px;
+      align-items: center;
+    }
+    .comments_list{
+      padding:0 25px;
+
+    }
+  }
+  .mycomment{
+    .el-input{
+      margin-right: 18px;
+    }
+    .el-input__inner{background: #f5f5f5;border-radius: 20px;border: none ;
+      &::placeholder{
+        color: #a6a6a6;
+      }
+    }
+    .btn-small{width: 70px;height: 34px;flex-shrink: 0;padding: 0;}
+    display: flex;
+    margin-bottom: 20px;
+  }
+}

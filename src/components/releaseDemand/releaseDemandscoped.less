@@ -1,0 +1,95 @@
+@import "../../common/var.less";
+#releaseDemand{
+ header{
+   width: 100%;
+   background: #e7f0f7;
+   display: flex;
+   align-items: center;justify-content: center;
+   padding-top:36px;
+   margin-bottom: 10px;
+ }
+  main{
+    width:100% ;
+    display: block;
+
+    background: #fff;
+    text-align: left;
+    form{
+      .formLists{
+        padding: 20px 70px 55px 70px;
+      }
+      .submit{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: @col_f5;
+        padding: 30px 0;
+        button{
+          width: 107px;height: 38px;
+        }
+      }
+    }
+
+    dt{
+      display: flex;
+      align-items: center;
+      font-size: 16px;
+      color: @col-4c;
+      line-height: 1;
+      margin-bottom: 15px;
+      &.required:after{
+        content: "*";
+        color: #f56c6c;
+        margin-left: 5px;
+      }
+      i{
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        color: #fff;
+        line-height: 20px;
+        text-align: center;
+        background: #47a6ff;;
+        border-radius: 50%;
+        font-size: 14px;
+        margin-right: 10px;
+      }
+    }
+    dd{
+      padding-left: 30px;
+      display: flex;
+      flex-wrap: wrap;
+      span{
+        line-height: 40px;
+        margin: 0 6px;
+      }
+      .upload{
+        display: flex;
+        background: #fcfcfc;
+        border: 1px solid #e6e6e6;
+        border-top: 0;
+        align-items: center;
+        font-size: 14px;
+        padding: 7px 0;
+        span{
+          margin-left: 10px;
+        }
+        &>div{
+          display: flex;
+        }
+      }
+
+      .wi100{width: 1126px;}
+      .textarea-large{
+        .wi100;
+        textarea{
+          height: 160px;
+        }
+      }
+      .size-middle{width: 451px;}
+      .timepicker{
+        width: 132px;
+      }
+    }
+  }
+}
